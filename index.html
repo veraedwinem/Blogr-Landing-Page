@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, user-scalable=no">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+  <title>Frontend Mentor | [Blogr]</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="hero">
+      <header class="header">
+        <nav class="nav">
+          <div class="nav-img">
+            <img src="images/logo.svg" alt="" class="nav-logo">
+          </div>
+
+          <div class="button" onclick="toggleMenu()">
+            <a href="#"><img src="images/icon-hamburger.svg" alt="" class="nav-hamb">
+            </a>
+          </div>
+        </nav>
+
+        <!-- Menu -->
+        <ul class="navl" id="menu">
+          <div class="links">
+            <li class="menu-main-box">
+              <a href="#" class="nav-title-link" onclick="toggleSubMenu()">Product
+                <img src="images/icon-arrow-dark.svg" alt="" id="arrow">
+                <img src="images/icon-arrow-light.svg" alt="" id="light-arrow">
+              </a>
+
+              <ul id="submenu">
+                <li>
+                  <a href="#" class="nav-sublink">Overview</a>
+                </li>
+
+                <li>
+                  <a href="#" class="nav-sublink">Pricing</a>
+                </li>
+
+                <li>
+                  <a href="#" class="nav-sublink">Marketplace</a>
+                </li>
+
+                <li>
+                  <a href="#" class="nav-sublink">Features</a>
+                </li>
+
+                <li>
+                  <a href="#" class="nav-sublink">Integrations</a>
+                </li>
+              </ul>
+
+
+
+            </li>
+
+            <li class="menu-main-box">
+              <a href="#" class="nav-title-link" onclick="toggleSubMenu1()">Company
+                <img src="images/icon-arrow-dark.svg" alt="" id="arrow1">
+                <img src="images/icon-arrow-light.svg" alt="" id="light-arrow1">
+              </a>
+
+              <ul id="submenu1">
+                <li>
+                  <a href="#" class="nav-sublink">About</a>
+                </li>
+
+                <li>
+                  <a href="#" class="nav-sublink">Team</a>
+                </li>
+
+                <li>
+                  <a href="#" class="nav-sublink">Blog</a>
+                </li>
+
+                <li>
+                  <a href="#" class="nav-sublink">Careers</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="menu-main-box">
+              <a href="#" class="nav-title-link" onclick="toggleSubMenu2()">Connect
+                <img src="images/icon-arrow-dark.svg" alt="" id="arrow2">
+                <img src="images/icon-arrow-light.svg" alt="" id="light-arrow2">
+              </a>
+
+              <ul id="submenu2">
+                <li>
+                  <a href="#" class="nav-sublink">Contact</a>
+                </li>
+
+                <li>
+                  <a href="#" class="nav-sublink">Newsletter</a>
+                </li>
+
+                <li>
+                  <a href="#" class="nav-sublink">LinkedIn</a>
+                </li>
+              </ul>
+            </li>
+          </div>
+
+          <hr class="sep">
+
+          <nav class="menu-buttons">
+            <a href="" class="login">Login</a>
+            <a href="" class="sign">Sign Up</a>
+          </nav>
+        </ul>
+
+      </header>
+
+
+      <!-- MenuEnd -->
+
+
+      <div class="hero-text">
+        <h1 class="hero-title">A modern publishing platform</h1>
+        <h2 class="hero-subtitle">Grow your audience and build your online brand</h2>
+      </div>
+
+      <div class="cta-bttn">
+        <a href="#" class="start-bttn">Start for Free</a>
+        <a href="#" class="learn-bttn">Learn More</a>
+      </div>
+
+
+    </div>
+
+    <div class="section-1">
+      <h1 class="s1-title">Designed for the future</h1>
+      <nav class="img-text">
+        <img src="images/illustration-editor-mobile.svg" alt="" class="s1-illu">
+        <img src="images/illustration-editor-desktop.svg" alt="" class="s1-illu-desktop">
+        <nav class="contain">
+          <nav class="text-wrapper">
+            <h1 class="s1-p-title">Introducing an extensible editor</h1>
+            <p class="s1-p-text"> Blogr features an exceedingly intuitive interface which lets you focus on one thing:
+              creating content.
+              The editor supports management of multiple blogs and allows easy manipulation of embeds such as images,
+              videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or
+              change the looks of a blog.</p>
+          </nav>
+          <nav class="text-wrapper">
+            <h1 class="s1-p-title">Robust content management</h1>
+            <p class="s1-p-text">Flexible content management enables users to easily move through posts. Increase the
+              usability of your blog
+              by adding customized categories, sections, format, or flow. With this functionality, you’re in full
+              control.
+            </p>
+          </nav>
+        </nav>
+      </nav>
+      </nav>
+    </div>
+
+    <div class="section-2">
+      <img src="images/illustration-phones.svg" alt="" class="s2-img">
+      <h1 class="s2-title">State of the Art Infrastructure</h1>
+      <p class="s2-paragraph">With reliability and speed in mind, worldwide data centers provide the backbone for
+        ultra-fast connectivity.
+        This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.</p>
+    </div>
+  
+
+  <div class="section-3">
+    <img src="images/illustration-laptop-mobile.svg" alt="" class="s3-img">
+    <h1 class="s3-p-title">Free, open, simple</h1>
+    <p class="s3-p-text">Blogr is a free and open source application backed by a large community of helpful developers.
+      It supports
+      features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools,
+      and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn.
+    </p>
+
+    <h1 class="s3-p-title">Powerful tooling</h1>
+    <p class="s3-p-text"> Batteries included. We built a simple and straightforward CLI tool that makes customization
+      and deployment a breeze, but
+      capable of producing even the most complicated sites.
+    </p>
+  </div>
+
+  <footer class="footer">
+    <img src="images/logo.svg" alt="" class="footer-logo">
+    <div class="footer-nav">
+
+      <h4 class="titles"> Product</h4>
+      <a href="" class="footer-link">Overview</a>
+      <a href="" class="footer-link">Pricing</a>
+      <a href="" class="footer-link">Marketplace</a>
+      <a href="" class="footer-link">Features</a>
+      <a href="" class="footer-link">Integrations</a>
+
+      <h4 class="titles">Company</h4>
+      <a href="" class="footer-link">About</a>
+      <a href="" class="footer-link">Team</a>
+      <a href="" class="footer-link">Blog</a>
+      <a href="" class="footer-link">Careers</a>
+
+      <h4 class="titles">Connect</h4>
+      <a href="" class="footer-link">Contact</a>
+      <a href="" class="footer-link">Newsletter</a>
+      <a href="" class="footer-link">LinkedIn</a>
+
+
+    </div>
+
+  </footer>
+</div>
+</body>
+
+
+</html>
+
+<script type="text/javascript">
+
+  function toggleMenu() {
+    var menuBox = document.getElementById('menu');
+    if (menuBox.style.display == "flex") { // if is menuBox displayed, hide it
+      menuBox.style.display = "none";
+    }
+    else { // if is menuBox hidden, display it
+      menuBox.style.display = "flex";
+    }
+  }
+
+  function toggleSubMenu() {
+    var menuBox = document.getElementById('submenu');
+    var imgPos = document.getElementById('arrow')
+    if (menuBox.style.display == "flex") { // if is menuBox displayed, hide it
+      menuBox.style.display = "none";
+    }
+    else { // if is menuBox hidden, display it
+      menuBox.style.display = "flex";
+    }
+
+    if (imgPos.style.transform == "rotate(180deg)") {
+      imgPos.style.transform = "rotate(0deg)"
+    }
+
+    else {
+      imgPos.style.transform = "rotate(180deg)"
+    }
+  }
+
+  function toggleSubMenu1() {
+    var menuBox = document.getElementById('submenu1');
+    var imgPos = document.getElementById('arrow1')
+    if (menuBox.style.display == "flex") { // if is menuBox displayed, hide it
+      menuBox.style.display = "none";
+    }
+    else { // if is menuBox hidden, display it
+      menuBox.style.display = "flex";
+    }
+
+    if (imgPos.style.transform == "rotate(180deg)") {
+      imgPos.style.transform = "rotate(0deg)"
+    }
+
+    else {
+      imgPos.style.transform = "rotate(180deg)"
+    }
+  }
+
+  function toggleSubMenu2() {
+    var menuBox = document.getElementById('submenu2');
+    var imgPos = document.getElementById('arrow2')
+    if (menuBox.style.display == "flex") { // if is menuBox displayed, hide it
+      menuBox.style.display = "none";
+    }
+    else { // if is menuBox hidden, display it
+      menuBox.style.display = "flex";
+    }
+
+    if (imgPos.style.transform == "rotate(180deg)") {
+      imgPos.style.transform = "rotate(0deg)"
+    }
+
+    else {
+      imgPos.style.transform = "rotate(180deg)"
+    }
+  }
+</script>
